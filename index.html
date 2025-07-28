@@ -17,7 +17,6 @@
                     <div class="department-info">
                         <div>Department of Pharmaceutical Sciences</div>
                         <div>School of Health & Life Sciences</div>
-                        
                     </div>
                 </div>
             </div>
@@ -172,6 +171,148 @@
             </div>
         </section>
 
+        <!-- Appointment Section -->
+<section class="expandable-section">
+    <button class="expandable-btn">
+        <h2>Book an Appointment</h2>
+        <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="expandable-content">
+        <div class="office-hours">
+            <h3>Office Hours</h3>
+            <table>
+                <tr><th>Day</th><th>Hours</th></tr>
+                <tr><td>Monday</td><td>9:00 am – 11:00 am</td></tr>
+                <tr><td>Tuesday</td><td>11:20 am – 12:50 pm</td></tr>
+                <tr><td>Wednesday</td><td>9:00 am – 11:00 am & 4:20 pm – 5:20 pm</td></tr>
+            </table>
+        </div>
+
+        <div class="appointment-form">
+            <form id="appointmentForm" action="https://formsubmit.co/YOUR_FORMSUBMIT_KEY/murad.hossain@northsouth.edu" method="POST">
+                <input type="hidden" name="_subject" value="New Appointment Request">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://yourusername.github.io/your-repo/thankyou.html">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <!-- Personal Information -->
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="Full Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nsuid">NSU ID:</label>
+                    <input type="text" id="nsuid" name="NSU ID" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="studentemail">NSU Student Email:</label>
+                    <input type="email" id="studentemail" name="Student Email" required 
+                           pattern=".+@northsouth\.edu$" title="Please use your NSU email">
+                </div>
+                
+                <!-- Course Information -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="coursecode">Course Code:</label>
+                        <input type="text" id="coursecode" name="Course Code" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="section">Section:</label>
+                        <select id="section" name="Section" required>
+                            <option value="">Select Section</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Time Selection -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="day">Preferred Day:</label>
+                        <select id="day" name="Preferred Day" required>
+                            <option value="">Select Day</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Preferred Time:</label>
+                        <select id="time" name="Preferred Time" required>
+                            <option value="">Select Time</option>
+                            <option value="Monday 9:00 am">Monday 9:00 am</option>
+                            <option value="Monday 10:00 am">Monday 10:00 am</option>
+                            <option value="Tuesday 11:20 am">Tuesday 11:20 am</option>
+                            <option value="Tuesday 12:00 pm">Tuesday 12:00 pm</option>
+                            <option value="Wednesday 9:00 am">Wednesday 9:00 am</option>
+                            <option value="Wednesday 10:00 am">Wednesday 10:00 am</option>
+                            <option value="Wednesday 4:20 pm">Wednesday 4:20 pm</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Semester Information -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="semester">Semester:</label>
+                        <select id="semester" name="Semester" required>
+                            <option value="">Select Semester</option>
+                            <option value="Spring">Spring</option>
+                            <option value="Summer">Summer</option>
+                            <option value="Fall">Fall</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="year">Year:</label>
+                        <select id="year" name="Year" required>
+                            <option value="">Select Year</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Purpose -->
+                <div class="form-group">
+                    <label for="purpose">Purpose of Appointment:</label>
+                    <select id="purpose" name="Purpose" required>
+                        <option value="">Select Purpose</option>
+                        <option value="Course Consultation">Course Consultation</option>
+                        <option value="Research Guidance">Research Guidance</option>
+                        <option value="Academic Advising">Academic Advising</option>
+                        <option value="Thesis Discussion">Thesis Discussion</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message">Detailed Message:</label>
+                    <textarea id="message" name="Detailed Message" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Request Appointment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
         <!-- Contact Section -->
         <section class="expandable-section">
             <button class="expandable-btn">
